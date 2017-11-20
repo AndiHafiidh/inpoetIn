@@ -179,7 +179,7 @@ $(document).ready(function(){
 			var parent = cls_encrypt.parent();			
 			var cloning = cls_encrypt.clone().attr('type', 'hidden');			
 			cls_encrypt.removeAttr("name");
-			parent.append(cloning);
+			parent.prepend(cloning);
 
 			$.loadScript(CDN_URL+'jquery.md5.js', function(){
 				cls_encrypt.keyup(function(e){
